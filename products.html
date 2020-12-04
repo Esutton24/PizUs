@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>PizUs - Menu</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/business-casual.min.css" rel="stylesheet">
+
+</head>
+
+<body style="background-image: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url(img/pizusShop.jpg); ">
+
+  <h1 class="site-heading text-center text-white d-none d-lg-block">
+    <span class="site-heading-upper text-primary mb-3">Pizza's</span>
+  </h1>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">PizUs</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="index.html">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="about.html">About</a>
+          </li>
+          <li class="nav-item active px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="products.html">Order</a>
+          </li>
+          <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="store.html">Store</a>
+          </li>
+          <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="register.html">Login/Sign up</a>
+          </li>
+          <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="faq.html">FAQ</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-section cta">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+          <div class="cta-inner text-center rounded">
+            <h2 class="section-heading mb-5">
+              <span class="section-heading-upper">Whats on the menu?</span>
+            </h2>
+            <br>
+            <h2 class="section-heading mb-5">
+              <span class="section-heading-upper" style="font-size:15px">Pizza's</span>
+            </h2>
+            <br><br>
+            <ul class="list-unstyled list-hours mb-5 text-left mx-auto">
+              <li class="list-unstyled-item list-hours-item d-flex">
+                  <img src="img/cheese.png" style="width: 50%;" alt="">
+                  <span style="margin-left: 10px;">Cheese Pizza</span>
+              </li>
+              <div style="text-align: center">
+                <input type="checkbox" id="Cheese Pizza" name="option" value="5">
+                <label for="size1"> Order</label><br>             
+              </div>
+              <br><br>
+              <li class="list-unstyled-item list-hours-item d-flex">
+                <img src="img/custom.png" style="width: 50%;" alt="">
+                <span style="margin-left: 10px;">Custom Pizza</span>
+              </li>
+              <div style="text-align: center">
+                <button style="margin-left: 10px;" onclick="customize()">Customize Pizza</button>
+              </div>
+              <div id=customize style="text-align: center; margin-top: 50px; display: none;">
+                <h2 class="section-heading mb-5">
+                  <span class="section-heading-upper" style="font-size:15px">Pizza Crusts</span>
+                </h2>
+                <input type="checkbox" id="Stuffed" name="option" value="3">
+                <label for="crust1"> Stuffed</label><br>
+                <input type="checkbox" id="Regular" name="option" value="1">
+                <label for="crust2"> Regular</label><br>
+
+                <h2 class="section-heading mb-5"  style="margin-top: 50px;">
+                  <span class="section-heading-upper" style="font-size:15px">Pizza Size</span>
+                </h2>
+                <input type="checkbox" id="Small" name="option" value="5">
+                <label for="size1"> Small</label><br>
+                <input type="checkbox" id="Medium" name="option" value="7">
+                <label for="size2"> Medium</label><br>
+                <input type="checkbox" id="Large" name="option" value="9">
+                <label for="size3"> Large</label><br>
+                <input type="checkbox" id="X-Large" name="option" value="11">
+                <label for="size4"> X-large</label><br>
+
+                <h2 class="section-heading mb-5"  style="margin-top: 50px;">
+                  <span class="section-heading-upper" style="font-size:15px">Pizza Toppings</span>
+                </h2>
+                <input type="checkbox" id="Pepperoni" name="option" value="1">
+                <label for="top1"> Pepperoni</label><br>
+                <input type="checkbox" id="Sausage" name="option" value="1">
+                <label for="top2"> Sausage</label><br>
+                <input type="checkbox" id="Ham" name="option" value="1">
+                <label for="top3"> Ham</label><br>
+                <input type="checkbox" id="Bacon" name="option" value="1">
+                <label for="top4"> Bacon</label><br>
+                <input type="checkbox" id="Olives" name="option" value="1">
+                <label for="top5"> Olives</label><br>
+                <input type="checkbox" id="Peppers" name="option" value="1">
+                <label for="top6"> Peppers</label><br>
+                <input type="checkbox" id="Mushrooms" name="option" value="1">
+                <label for="top7"> Mushrooms</label><br>
+                <input type="checkbox" id="Pineapples" name="option" value="1">
+                <label for="top8"> Pineapples</label><br>
+              </div>
+            </ul>
+
+            <br><br><br>
+            <h2 class="section-heading mb-5">
+              <span class="section-heading-upper" style="font-size:15px;">Drinks</span>
+            </h2>
+            <br><br>
+            <ul class="list-unstyled list-hours mb-5 text-left mx-auto">
+              <li class="list-unstyled-item list-hours-item d-flex">
+                  <img src="img/mtndew.png" style="width: 40%; margin-left: 20px" alt="">
+                  <span style="margin-left: 10px;">Mountain Dew</span>
+              </li>
+              <div style="text-align: center">
+                <input type="checkbox" id="Mountain Dew" name="option" value="2">
+                <label for="size1"> Order</label><br>  
+              </div>
+              <br><br>
+              <li class="list-unstyled-item list-hours-item d-flex">
+                <img src="img/pepsi.png" style="width: 50%;" alt="">
+                <span>Pepsi</span>
+              </li>
+              <div style="text-align: center">
+                <input type="checkbox" id="Pepsi" name="option" value="2">
+                <label for="size1"> Order</label><br>  
+              </div>
+              <br><br>
+              <li class="list-unstyled-item list-hours-item d-flex">
+                <img src="img/diet.png" style="width: 25%; margin-left: 40px;" alt="">
+                <span style="margin-left: 40px;">Diet Pepsi</span>
+              </li>
+              <div style="text-align: center">
+                <input type="checkbox" id="Diet Pepsi" name="option" value="2">
+                <label for="size1"> Order</label><br>  
+              </div>
+              <br><br>
+              <li class="list-unstyled-item list-hours-item d-flex">
+                <img src="img/drpepper.png" style="width: 22%; margin-left: 50px;" alt="">
+                <span style="margin-left: 40px;">Dr. Pepper</span>
+              </li>
+              <div style="text-align: center">
+                <input type="checkbox" id="Dr. Pepper" name="option" value="2">
+                <label for="size1"> Order</label><br>  
+              </div>
+              <br><br>
+              <li class="list-unstyled-item list-hours-item d-flex">
+                <img src="img/sevenup.png" style="width: 50%;" alt="">
+                <span>7 Up</span>
+              </li>
+              <div style="text-align: center">
+                <input type="checkbox" id="7 Up" name="option" value="2">
+                <label for="size1"> Order</label><br>  
+              </div>
+            </ul>
+
+            <br><br>
+            <h2 class="section-heading mb-5">
+              <span class="section-heading-upper" style="font-size:15px">Delivery Options</span>
+            </h2>
+            <div style="text-align: center">
+              <input type="radio" id="Pickup" name="option">
+              <label for="size1"> Pickup</label>
+              <input type="radio" style="margin-left: 20px;" id="Delivery" name="option">
+              <label for="size1"> Delivery</label><br>  
+            </div>
+            <br><br><br>
+            <div style="text-align: center">
+              <button onclick="ProcessOrder()"style="margin-left: 10px;">Place Order</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer text-faded text-center py-5">
+    <div class="container">
+      <p class="m-0 small">Copyright &copy; PizUs</p>
+    </div>
+  </footer>
+
+  <script>
+    function customize(){
+      document.getElementById('customize').style.display = 'block';
+    }
+    function ProcessOrder(){
+      var items = document.getElementsByName('option');
+        var selectedItems="";
+        var selectedValue="";
+        var order="";
+        var total = 0;
+				for(var i=0; i<items.length; i++){
+          if(items[i].type=='checkbox' && items[i].checked==true)
+          {
+            selectedItems = items[i].value+"\n";
+            total += parseInt(selectedItems);
+            selectedValue = items[i].id + '';
+            order += selectedValue + " " + "$" + selectedItems;
+          }
+          else if(items[i].type=='radio' && items[i].checked){
+            selectedValue = items[i].id + '';
+            order += selectedValue +'\n';
+          }
+        }
+        alert('Your order:\n\n' + order + '\nTotal: ' + '$' + total);
+    }
+  </script>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

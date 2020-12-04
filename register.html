@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>PizUs - Menu</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/business-casual.min.css" rel="stylesheet">
+
+</head>
+
+<body style="background-image: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url(img/pizusShop.jpg); ">
+
+  <h1 class="site-heading text-center text-white d-none d-lg-block">
+    <span class="site-heading-upper text-primary mb-3">Register with us!</span>
+  </h1>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">PizUs</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="index.html">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="about.html">About</a>
+          </li>
+          <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="products.html">Order</a>
+          </li>
+          <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="store.html">Store</a>
+          </li>
+          <li class="nav-item active px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="register.html">Login/Sign up</a>
+          </li>
+          <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="faq.html">FAQ</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-section cta">
+    <div id=here class="container">
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+          <div class="cta-inner text-center rounded">
+            <h2 class="section-heading mb-5">
+              <span class="section-heading-upper">Sign up/Login</span>
+            </h2>
+            <ul class="list-unstyled list-hours mb-5 text-left mx-auto">
+              <li id=login class="list-unstyled-item list-hours-item d-flex" style="border: none;">
+                <form id=loginForm>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Email address</label>
+                      <input type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp" placeholder="Enter email">
+                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Password</label>
+                      <input type="password" class="form-control" id="loginPassword" placeholder="Password">
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="margin-bottom: 10px" onclick="getInfo()">Submit</button>
+                    <br><br>
+                    <span id=failed style="margin-left: 10px; color: red; display: none;">Login failed!</span>
+                    <span id=passed style="margin-left: 10px; color: green; display: none">You're logged in!</span>
+                </form>
+              </li>
+              <br>
+              <li id=sgn class="list-unstyled-item list-hours-item d-flex">
+                <div id=signupBtn style="display: block">
+                  Not registered?<a href="#here" onclick="signup()" type="submit" class="btn btn-primary" style="margin-bottom: 10px; margin-left: 10px">Sign up!</a>
+                </div>
+              </li>
+
+              <li id=signup class="list-unstyled-item list-hours-item d-flex" style="border: none; visibility: hidden;">
+                <form id=signupForm style="display: none;">
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">First Name</label>
+                      <input type="text" class="form-control" id="firstName" aria-describedby="emailHelp" placeholder="Enter First Name">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Last Name</label>
+                      <input type="text" class="form-control" id="lastName" aria-describedby="emailHelp" placeholder="Enter Last Name">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Email address</label>
+                      <input type="email" class="form-control" id="signupEmail" aria-describedby="emailHelp" placeholder="Enter email">
+                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Password</label>
+                      <input type="password" class="form-control" id="signupPassword" placeholder="Password">
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="margin-bottom: 10px">Submit</button>
+                </form>
+              </li>              
+              <li id=lgn class="list-unstyled-item list-hours-item d-flex" style="visibility: hidden;">
+                <div id=loginBtn style="display: block; display: none;">
+                  Already have an account?<a href="#here" onclick="login()" type="submit" class="btn btn-primary" style="margin-bottom: 10px; margin-left: 10px">Login!</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer text-faded text-center py-5">
+    <div class="container">
+      <p class="m-0 small">Copyright &copy; PizUs</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+
+      var objPeople = [
+        {
+          firstName: 'Ethan',
+          lastName: 'Sutton',
+          email: 'ethansutton@gmail.com',
+          password: 'ethan123' 
+        },
+      ]
+      console.log(objPeople[0].email)
+
+      var form = document.getElementById("loginForm");
+      function handleForm(event) { event.preventDefault(); } 
+      form.addEventListener('submit', handleForm);
+
+      function getInfo(){
+        var email = document.getElementById('loginEmail').value;
+        var password = document.getElementById('loginPassword').value;
+
+        for(var i = 0; i < objPeople.length; i++){
+          if(email == objPeople[i].email && password == objPeople[i].password){
+            document.getElementById('passed').style.display = "block";
+            document.getElementById('failed').style.display = "none";
+          }else{
+            document.getElementById('failed').style.display = "block";
+            document.getElementById('passed').style.display = "none";
+          }
+        }
+      }
+
+      function signup(){
+
+        var signup = document.getElementById('signup');
+        signup.style.visibility = 'visible';
+        var signupForm = document.getElementById('signupForm');
+        signupForm.style.display = 'block';
+
+        var signupBtn = document.getElementById('signupBtn');
+        signupBtn.style.display = 'none';
+        var sgn = document.getElementById('sgn');
+        sgn.style.visibility = 'hidden';
+
+        var login = document.getElementById('login');
+        login.style.visibility = 'hidden';
+        var loginForm = document.getElementById('loginForm');
+        loginForm.style.display = 'none';
+
+        var loginBtn = document.getElementById('loginBtn');
+        loginBtn.style.display = 'block';
+        var sgn = document.getElementById('lgn');
+        lgn.style.visibility = 'visible';
+      }
+
+      function login(){
+
+        var signup = document.getElementById('signup');
+        signup.style.visibility = 'hidden';
+        var signupForm = document.getElementById('signupForm');
+        signupForm.style.display = 'none';
+
+        var signupBtn = document.getElementById('signupBtn');
+        signupBtn.style.display = 'block';
+        var sgn = document.getElementById('sgn');
+        sgn.style.visibility = 'visible';
+
+        var login = document.getElementById('login');
+        login.style.visibility = 'visible';
+        var loginForm = document.getElementById('loginForm');
+        loginForm.style.display = 'block';
+
+        var loginBtn = document.getElementById('loginBtn');
+        loginBtn.style.display = 'none';
+        var sgn = document.getElementById('lgn');
+        lgn.style.visibility = 'hidden';
+      }
+  </script>
+
+</body>
+
+</html>
